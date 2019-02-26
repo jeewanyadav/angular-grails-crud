@@ -7,7 +7,7 @@ app.factory("UserService",function ($http) {
         });
     }
     factory.userList=function () {
-        return $http.get("user/userList").success(function (data) {
+        return $http.get("http://localhost:8080/angularingrails/user/userList").success(function (data) {
             return data;
         });
     }
@@ -16,7 +16,6 @@ app.factory("UserService",function ($http) {
             return data;
         });
     }
-
     return factory;
 
 });

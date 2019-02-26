@@ -11,6 +11,7 @@ app.controller("UserController",function ($controller,$rootScope,$scope,$locatio
             },1000);
         });
     }
+
     $scope.userList=function () {
         UserService.userList().then(function (response) {
             $scope.users=response.data.users;
